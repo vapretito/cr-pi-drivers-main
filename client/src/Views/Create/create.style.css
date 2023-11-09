@@ -1,0 +1,112 @@
+.create-form {
+  width: 100%;
+  max-width: 400px; /* Ancho máximo del formulario */
+  margin: 130px auto; /* 100px de margen en la parte superior e inferior, y 'auto' para centrar horizontalmente */
+  padding: 20px;
+  background-color: #000032;
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.create-form input[type="text"],
+.create-form select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: -10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #c2ab82;
+  color: #070707;
+  font-size: 16px;
+}
+
+.create-form select {
+  background-color: #c2ab82;
+  color: #050505;
+  font-size: 16px;
+}
+
+.create-form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.create-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilo para el mensaje de error */
+.create-form p {
+  color: #ff0000;
+  margin-top: 10px;
+}
+
+/* Alinea el botón en el centro del formulario */
+.create-form button.center {
+  display: block;
+  margin: 0 auto;
+}
+
+.form-options {
+  margin-bottom: 20px;
+}
+
+.errors {
+  color: #e63946;
+  font-size: 16px;
+  margin-top: 5px;
+}
+.creating-button {
+  width: 10rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #f3ecec;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  margin-top: 10px; /* Cambiamos el margen top para ajustar el espacio */
+}
+
+.creating-button:hover {
+  background-color: #e0161d;
+}
+
+.create-form input[type="date"] {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: -10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #c2ab82;
+  color: #070707;
+  font-size: 16px;
+}
+.f1image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  
+}
+
+  
+  

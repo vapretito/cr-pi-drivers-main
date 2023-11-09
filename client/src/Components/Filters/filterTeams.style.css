@@ -1,0 +1,44 @@
+/* Estilo base para el select */
+.filter-selector {
+    width: 100%; /* O ajusta el ancho según tus necesidades */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+    outline: none; /* Elimina el contorno al hacer clic */
+    cursor: pointer;
+  }
+  
+  .filter-selector:hover {
+    background-color: #e0161d;
+    border-color: #1d5a0e;
+    color: #f3ecec;
+  }
+  
+  
+  /* Estilo para el foco del select */
+  .filter-selector:focus {
+    border-color: #007bff; /* Cambia el color del borde cuando el select está enfocado */
+  }
+  
+  /* Estilo para las opciones dentro del select */
+  .filter-selector option {
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  /* Estilo para las opciones cuando se hace hover */
+  .filter-selector option:hover {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  /* Estilo para la opción seleccionada */
+  .filter-selector option:checked {
+    background-color: #007bff;
+    color: #fff;
+  }
+  

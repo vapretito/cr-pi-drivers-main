@@ -1,0 +1,38 @@
+.Card {
+  border: 1px solid #dd10102d;
+  border-radius: 10px;
+  padding: 10px;
+  background: #09788b52;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  text-align: center; /* Alinea el contenido al centro */
+  width: 200px; /* Ancho de la carta */
+  height: 290px; /* Altura de la carta */
+  margin: 5px;
+}
+
+.Card:hover {
+  transform: scale(1.05); /* Efecto de aumento al pasar el ratón */
+}
+
+.Card h1 {
+  display:inline-flex;
+
+  margin: 10px 0; /* Espacio alrededor del título */
+  font-size: 18px; /* Tamaño de la fuente aumentado */
+  color: #ffffff;
+}
+
+.Card p {
+  margin-top: 10px; /* Espacio entre el título y el párrafo */
+  font-size: 10px; /* Tamaño de la fuente aumentado */
+  color: #f5f5f5;
+  font-weight: bolder;
+}
+
+.Card img {
+  width: 70%;
+  height: 150px; /* Altura máxima reducida */
+  object-fit: cover; /* Escalar y recortar la imagen para ajustarse */
+  border-radius: 5px; /* Un ligero redondeo para la imagen */
+}

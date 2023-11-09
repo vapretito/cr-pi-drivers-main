@@ -1,0 +1,190 @@
+/* Estilos generales */
+
+  
+  /* Estilos para la sección de aterrizaje (landing) */
+  .landing {
+    background: linear-gradient(to bottom, #01004e, #000032, #67013a, #d63d41, #c2ab82);
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden; /* Evitar que el fondo se desplace */
+  }
+  
+  /* Contenedor del logo */
+  .logo-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  /* Estilos para el logo */
+  .logo {
+    width: 200px; /* Tamaño mediano */
+    height: auto;
+  }
+  
+  /* Contenedor del botón */
+  .contenedor {
+    position: absolute;
+    color: #f3ecec;
+    top: calc(50% + 50px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* Estilos para el botón */
+  .btn {
+    width: 12rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #fff; /* Fondo blanco */
+    color: #000; /* Texto negro */
+    cursor: pointer;
+    transition: background-color 0.25s, color 0.25s;
+  }
+  
+  /* Estilos para el botón al pasar el cursor (hover) */
+  .btn:hover {
+    background-color: #ffffff; /* Fondo blanco */
+    color: #d63d41; /* Texto blanco */
+    background: linear-gradient(to bottom, #ffffff, #000000, #ffffff, #000000, #ffffff);
+
+    background-size: 5rem 5rem; /* Tamaño del patrón de cuadros */
+    border-color: transparent; /* Sin borde en hover */
+  }
+  
+  /* Animación de faros simulando autos que pasan rápidamente */
+  .lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    margin: auto;
+    width: 90vw;
+  }
+  
+  .lines .line {
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    background: rgba(247, 26, 26, 0.055);
+    overflow: hidden;
+  }
+  
+  .lines .line::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 15vh;
+    width: 100%;
+    top: -50%;
+    left: 0;
+    background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(255, 255, 255, 0)),
+      color-stop(75%, #ffffff),
+      to(#ffffff)
+    );
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 0%,
+      #fc0000 40%,
+      #fc0000 100%
+    );
+    -webkit-animation: run 3s 0s infinite;
+    animation: run 3s 0s infinite;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+    animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+  }
+  
+  .lines .line:nth-child(1) {
+  margin-left: -25%;
+}
+
+.lines .line:nth-child(1)::after {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+.lines .line:nth-child(2) {
+  margin-left: -23%; /* Ajusta el valor para separar 1 y 2 */
+}
+
+.lines .line:nth-child(2)::after {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+.lines .line:nth-child(3) {
+  margin-left: 25%;
+}
+
+.lines .line:nth-child(3)::after {
+  -webkit-animation-delay: 2.5s;
+  animation-delay: 2.5s;
+}
+
+.lines .line:nth-child(4) {
+  margin-left: 27%; /* Ajusta el valor para separar 3 y 4 */
+}
+
+.lines .line:nth-child(4)::after {
+  -webkit-animation-delay: 2.5s;
+  animation-delay: 2.5s;
+}
+
+.lines .line:nth-child(5) {
+  margin-left: 8%;
+}
+
+.lines .line:nth-child(5)::after {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+.lines .line:nth-child(6) {
+  margin-left: 10%; /* Ajusta el valor para separar 5 y 6 */
+}
+
+.lines .line:nth-child(6)::after {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+  
+  
+  
+  @-webkit-keyframes run {
+    0% {
+      top: -50%;
+    }
+    100% {
+      top: 110%;
+    }
+  }
+  
+  @keyframes run {
+    0% {
+      top: -50%;
+    }
+    100% {
+      top: 110%;
+    }
+  }
+  

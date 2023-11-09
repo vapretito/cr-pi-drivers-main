@@ -1,0 +1,77 @@
+.navBar {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente todos los elementos en la pantalla */
+  align-items: center; /* Centra verticalmente todos los elementos en la pantalla */
+  background-color: #33333300;
+  color: white;
+  height: 19vh;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.logoo {
+  width: 200px;
+  margin: 0 10px; /* Margen a la izquierda y derecha para separar elementos */
+}
+
+.search-box {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  margin: 0 -50px; /* Margen a la izquierda y derecha para separar elementos */
+}
+
+.search-box form {
+  display: flex;
+  align-items: center;
+}
+
+.search-box input[type="search"] {
+  padding: 5px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.search-box button {
+  background-color: #007bff;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px; /* Agrega un margen a la izquierda del botón de búsqueda */
+}
+.search-box button:hover {
+  background-color: #0056b3; /* Cambia el color al pasar el cursor */
+}
+
+.filter-container {
+  display: flex;
+  align-items: center;
+  margin-left: 0 10px; /* Margen a la izquierda y derecha para separar elementos */
+}
+
+.create-img {
+  width: 50px; /* Ancho de 50px */
+  height: 50px; /* Altura de 50px */
+  color: white;
+    cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 0 250px; 
+
+}
+
+
+.create-button:hover {
+  background-color: #0056b3;
+}
+
+/* Anula el color morado para los enlaces visitados */
+a:visited {
+  color: inherit; /* Hereda el color del texto del elemento padre */
+  text-decoration: none; /* Quita cualquier subrayado predeterminado */
+}
+
+  
+ 

@@ -1,0 +1,17 @@
+.home-title {
+    margin-top: 75px;
+    margin-bottom: 50px;
+    font-size: 76;
+    color: #d63d41;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+    
+  }
+
+.home {
+    display: flex;
+    flex-direction:  column;
+    align-items: center;
+
+}
+  
+
